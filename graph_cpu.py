@@ -11,7 +11,7 @@ ap.add_argument("-t", "--texture", type = str, required=True,
     help="path to the texture, for the moment just for gray scale, npz format")
 ap.add_argument("-k", "--k", type = int,  required=True,
 ap.add_argument("-s", "--s", type = float, default=1, required=True, help="The scale (or sigma) in the rbf kernel")
-args = vars(ap.parse_known_args())
+args = ap.parse_known_args()
 
 
 # get the position vector               
